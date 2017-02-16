@@ -66,7 +66,7 @@ namespace pierwszy_program
 
             // Piąty program
             
-            //ddfd dfdfdfdfdf
+         
 
             double wzrost;
             double waga;
@@ -101,7 +101,7 @@ namespace pierwszy_program
                     Console.WriteLine("Musisz mniej jeść!!!");
                 }
 
-            // fdefdfdfdfdf
+      
 
             //////////////////////////////////////////////////////////////////////////////////
 
