@@ -82,6 +82,8 @@ namespace pierwszy_program
 
             CzyWagaNorma = (wskaznikBMI >= 18.5 && wskaznikBMI <= 25.00);
 
+            //bla bla bla
+
             Console.WriteLine("------------Podsumowanie------------");
             Console.WriteLine("Twoja waga wynosi: {0}kg, twój wzrost wynosi: {1}m", waga, wzrost);
             Console.WriteLine("Twój wskaźnik BMI wynosi {0,2:F2}", wskaznikBMI);
