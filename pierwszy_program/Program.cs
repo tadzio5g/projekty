@@ -9,19 +9,34 @@ namespace pierwszy_program
 {
     class Program
     {
-        static void Main(string[] args)
+
+
+
+
+        static double przelicznik(double F)
+        {
+        double c;
+        c = 5 * F;
+            return c;                  
+        }
+
+
+
+
+
+    static void Main(string[] args)
         {
             //////////////////////////////////////////////////////////////////////////////////
-            /*
+            
             // Pierwszy program 
           
             Double x, y;
             Console.WriteLine("Witaj świecie");
             Console.WriteLine("Podaje stopnie farenheita");
             x = double.Parse(Console.ReadLine());
-            y = 5d / 9 * (x - 32);
+            y = Program.przelicznik(x);
             Console.WriteLine(y);
-            */
+            
 
             //////////////////////////////////////////////////////////////////////////////////
             /*
@@ -65,7 +80,7 @@ namespace pierwszy_program
             //////////////////////////////////////////////////////////////////////////////////
 
             // Piąty program
-            
+            /*
          
 
             double wzrost;
@@ -102,7 +117,7 @@ namespace pierwszy_program
                 }
 
       
-
+            */
             //////////////////////////////////////////////////////////////////////////////////
 
             // Szósty program
@@ -204,11 +219,92 @@ namespace pierwszy_program
 
             } while (odpowiedz != "n");
             */
+
+            //////////////////////////////////////////////////////////////////////////////////
+
+            // 11 program - tablica dwuwymiarowa
+            /*
+
+            Console.WriteLine("Podaj wielkośc tablicy: ");
+            int rozmiar = Convert.ToInt32(Console.ReadLine());
+                        
+            int[] tablica = new int[rozmiar];
+            
+            Random rand = new Random();
+
+            for (int i=0; i<tablica.Length; i++)
+            {
+                tablica[i] = rand.Next(1, 11);
+                Console.Write("{0,3}", tablica[i]);
+                                          
+            }
+
+            Array.Sort(tablica);
+            Console.WriteLine("\nNajmniejsza wartość w tablicy wynosi: {0,-2}", tablica[0]);
+
+    */
+
+            //////////////////////////////////////////////////////////////////////////////////
+
+            // 12 program - tablica dwuwymiarowa
+
+            /*
+
+
+            int sumaDruga = 0;
+            int sumaParzysta = 0;
+            int[,] tablica = new int[5,5];
+            Random rand = new Random();
+
+            for (int i=0; i<tablica.GetLength(0); i++)
+            {
+                for (int j=0; j<tablica.GetLength(1); j++)
+                {
+                    tablica[i, j] = rand.Next(1, 11);
+                    Console.Write("{0,-3}", tablica[i, j]);
+
+                    
+                    if(i==j)
+                    {
+                        sumaParzysta += tablica[i, j];
+                    }
+
+                    if ((i + j) == 4)
+                    {
+                        sumaDruga += tablica[i, j];
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("suma przekątnej o indeksach parzystych 1-1, 2-2 itd. wynosi: {0}", sumaParzysta);
+            Console.WriteLine("suma przekątnej o indeksach ktorych suma wynosi 5 wynosi: {0}", sumaDruga);
+
+            */
+
+
+            //////////////////////////////////////////////////////////////////////////////////
+
+            // 12 program - tablica dwuwymiarowa
+
+
+
+
             Console.ReadKey();
                   
 
         }
+
+
+        
+
     }
+
+
+
+
+
 }
 
 
