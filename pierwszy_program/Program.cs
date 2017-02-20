@@ -11,7 +11,7 @@ namespace pierwszy_program
     {
 
 
-
+        /*
 
         static double przelicznik(double F)
         {
@@ -22,21 +22,23 @@ namespace pierwszy_program
 
 
 
-
+            */
 
     static void Main(string[] args)
         {
             //////////////////////////////////////////////////////////////////////////////////
-            
+
             // Pierwszy program 
-          
+
+            /*
+
             Double x, y;
             Console.WriteLine("Witaj świecie");
             Console.WriteLine("Podaje stopnie farenheita");
             x = double.Parse(Console.ReadLine());
             y = Program.przelicznik(x);
             Console.WriteLine(y);
-            
+            */
 
             //////////////////////////////////////////////////////////////////////////////////
             /*
@@ -286,11 +288,13 @@ namespace pierwszy_program
 
             //////////////////////////////////////////////////////////////////////////////////
 
-            // 12 program - tablica dwuwymiarowa
+            // 12 program - tworzenie klas i konstruktorow
 
 
+            Kwadrat K1 = new Kwadrat(5, ConsoleColor.DarkRed);
 
-
+            K1.RysujKwadrat();
+            
             Console.ReadKey();
                   
 
